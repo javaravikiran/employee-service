@@ -1,0 +1,14 @@
+eureka:
+  client:
+    service-url:
+      default-zone: 'http://localhost:8761/eureka'
+server:
+  port: 8100
+spring:
+  application:
+    name: 'employee-service'
+    
+department-service:
+            ribbon:
+              listOfServers:'http://localhost:8080, http://localhost:8081'  
+
